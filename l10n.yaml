@@ -1,0 +1,6 @@
+# \see https://docs.flutter.dev/development/accessibility-and-localization/internationalization
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+
+# path will `${FLUTTER_PROJECT}/.dart_tool/flutter_gen/gen_l10n`
+output-localization-file: app_localizations.dart

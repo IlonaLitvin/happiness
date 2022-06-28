@@ -1,0 +1,202 @@
+name: happiness
+title: App with Good stories for Kids and Parents
+description: >-
+  Happy moments in pictures for Kids and Parents.
+homepage: https://noisy.studio
+issue_tracker: https://t.me/+oAfJtP7r0545N2E6
+publish_to: none
+
+# Format:
+#   version: major.minor.patch+code
+# Calculate the version code by this formula:
+#   code = m[A]jor * 100 * 100 + m[I]nor * 100 + [P]atch
+# Otherwise:  +AAIIPP
+version: 0.6.0+000600
+
+environment:
+  flutter: '>=3.0.2 <4.0.0'
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  api_happiness:
+    path: api_happiness
+
+  adaptive_ui: ^0.1.1
+  audiofileplayer: ^2.1.0
+  auto_size_text: ^3.0.0
+  awesome_dialog: ^2.1.2
+  bloc_concurrency: ^0.2.0
+  cached_network_image: ^3.2.0
+  collection: ^1.15.0
+  clay_containers: ^0.3.2
+
+  cross_file_manager:
+    path: ../cross_file_manager
+    #git: https://github.com/signmotion/cross_file_manager
+
+  cupertino_icons: ^1.0.4
+
+  dart_helpers:
+    path: ../dart_helpers
+    #git: https://github.com/signmotion/dart_helpers
+
+  enum_to_string: ^2.0.1
+  equatable: ^2.0.3
+  filesize: ^2.0.1
+  fimber: ^0.6.4
+  firebase_core: ^1.11.0
+  firebase_storage: ^10.2.5
+  flame: ^1.2.0
+  flame_bloc: ^1.5.0
+
+  # Tested with branch `extended_1_simple` from
+  # https://github.com/signmotion/flame_spine.git
+  flame_spine:
+    path: ../flame_spine
+    #git: https://github.com/signmotion/flame_spine.git
+
+  flutter_bloc: ^8.0.1
+  flutter_glow: ^0.2.0
+
+  flutter_flame_helpers:
+    path: ../flutter_flame_helpers
+    #git: https://github.com/signmotion/flutter_flame_helpers
+
+  flutter_helpers:
+    path: ../flutter_helpers
+    #git: https://github.com/signmotion/flutter_helpers
+
+  flutter_sizer: ^1.0.4
+  get_it: ^7.2.0
+  hydrated_bloc: ^8.0.0
+  in_app_review: ^2.0.4
+  intl: ^0.17.0
+  list_ext: ^1.0.4
+  oktoast: ^3.1.5
+  package_info_plus: ^1.3.0
+  parallax_rain: ^1.1.0
+  path: ^1.8.1
+  path_provider: ^2.0.8
+  permission_handler: ^10.0.0
+  purchases_flutter: ^3.9.2
+  shared_preferences: ^2.0.12
+
+  statemachine: ^3.1.0
+  url_launcher: ^6.0.18
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Trouble with this version when generate a g-files:
+  # error `Null check operator used on a null value`.
+  # \see https://stackoverflow.com/questions/64658523/flutter-build-runner-watch-not-working-the-getter-definingunit-was-called-on
+  #build_runner: ^1.10.2
+  build_runner: ^2.1.11
+  json_annotation: ^4.5.0
+  json_serializable: ^6.2.0
+  #Эта версия dart_code_metrics несовместима с версией json_serializable
+  #dart_code_metrics: ^3.2.2
+  matcher: ^0.12.11
+  # Dependency to `build_runner` when occurs the error`Null check operator used on a null value`.
+  #mockito: ^4.1.1+1
+  mockito: ^5.2.0
+
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  # \see l10n.yaml
+  generate: true
+
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/pacifico/pacifico_regular.ttf
+
+  assets:
+    - assets/
+
+    - assets/images/
+
+    # later_cards
+    - assets/later_cards/
+    - assets/later_cards/see_you_screen/about/
+
+    # welcome_cards
+    - assets/welcome_cards/
+    - assets/welcome_cards/start_screen/about/
+
+    # picture_cards
+    - assets/picture_cards/
+
+    - assets/picture_cards/fairy/
+    - assets/picture_cards/fairy/about/
+
+    - assets/picture_cards/fairy_tale_in_the_wood/about/
+    - assets/picture_cards/fairy_tale_in_the_wood/compositions/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/girl/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/girl/idle/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/owl/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/owl/idle/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/owl_100/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/spineboy_50/
+    - assets/picture_cards/fairy_tale_in_the_wood/elements/50/spineboy_100/
+    - assets/picture_cards/fairy_tale_in_the_wood/previews/4to3/256x192/
+
+    - assets/picture_cards/fox_and_fish/about/
+    - assets/picture_cards/fox_and_fish/compositions/
+    - assets/picture_cards/fox_and_fish/elements/
+    - assets/picture_cards/fox_and_fish/elements/50/
+    - assets/picture_cards/fox_and_fish/elements/50/fox/
+    - assets/picture_cards/fox_and_fish/elements/50/fox/idle/
+    - assets/picture_cards/fox_and_fish/previews/1to1/256x256/
+
+    - assets/picture_cards/girl_and_deer/
+    - assets/picture_cards/girl_and_deer/about/
+
+    - assets/picture_cards/girl_and_whale/
+    - assets/picture_cards/girl_and_whale/about/
+
+    - assets/picture_cards/spring_girl/
+    - assets/picture_cards/spring_girl/about/
+
+    # tests
+    #- assets/picture_cards/test_4096x3072/
+    #- assets/picture_cards/test_4096x3072/sprites/
+
+    #- assets/picture_cards/test_animation_code/
+    #- assets/picture_cards/test_animation_code/sprites/
+    #- assets/picture_cards/test_animation_code/sprites/butterfly_orange/
+    #- assets/picture_cards/test_animation_code/sprites/butterfly_orange/idle/
+    #- assets/picture_cards/test_animation_code/sprites/butterfly_orange/tap_reaction/
+    #- assets/picture_cards/test_animation_code/sprites/chopper/
+    #- assets/picture_cards/test_animation_code/sprites/chopper/idle/
+
+    #- assets/picture_cards/test_animation_code_w_a/
+    #- assets/picture_cards/test_animation_code_w_a/sprites/
+    #- assets/picture_cards/test_animation_code_w_a/sprites/chopper/
+    #- assets/picture_cards/test_animation_code_w_a/sprites/chopper/idle/
+    #- assets/picture_cards/test_animation_code_w_a/sprites/brock/
+    #- assets/picture_cards/test_animation_code_w_a/sprites/brock/idle/
+
+    #- assets/picture_cards/test_grey_to_color_16to9/
+    #- assets/picture_cards/test_grey_to_color_16to9/sprites/
+
+    #- assets/picture_cards/test_static_states/
+    #- assets/picture_cards/test_static_states/sprites/
+    #- assets/picture_cards/test_static_states/sprites/bushes_right/
+    #- assets/picture_cards/test_static_states/sprites/tree_left/
+    #- assets/picture_cards/test_static_states/sprites/tree_left/autumn/
+    #- assets/picture_cards/test_static_states/sprites/tree_left/spring/
+    #- assets/picture_cards/test_static_states/sprites/tree_left/summer/
+    #- assets/picture_cards/test_static_states/sprites/tree_left/winter/

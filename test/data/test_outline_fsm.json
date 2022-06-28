@@ -1,0 +1,66 @@
+{
+  "name": "test_outline_fsm",
+  "background": {
+    "name": "background_16to9"
+  },
+  "aspect_size": "16to9",
+  "size": [
+    4100,
+    2307
+  ],
+  "state_machines": {
+    "GreyIdleTapReaction": {
+      "transitions": [
+        "grey -> OnTap -> idle",
+        "idle -> OnTap -> tap_reaction",
+        "tap_reaction -> OnEnd -> idle"
+      ],
+      "directors": {
+        "grey": [
+          {
+            "ColorToGrey": {
+              "duration": 0
+            }
+          }
+        ],
+        "idle": [
+          {
+            "ScaleInOut": {
+              "duration": 1.5,
+              "scale": 1.2,
+              "curve": "bounceOut"
+            }
+          },
+          {
+            "GreyToColor": {
+              "duration": 1.2
+            }
+          }
+        ],
+        "tap_reaction": [
+          {
+            "ScaleInOut": {
+              "duration": 2.5,
+              "scale": 2.2,
+              "curve": "bounceIn"
+            }
+          },
+          {
+            "PlaySoundByTap": {
+              "volume": 1.0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ws": [
+    {
+      "name": "girl",
+      "position": "center 2232",
+      "anchor": "center bottom",
+      "scale": 0.8,
+      "sm": "GreyIdleTapReaction"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "{{type}}",
+  "id": "{{id}}",
+  "original_size": [{{width}}, {{height}}],
+  "compositions": {{{compositions}}},
+  "elements": {{elements}},
+  "previews": {{{previews}}}
+}

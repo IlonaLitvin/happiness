@@ -1,0 +1,8 @@
+{
+  "type": "picture",
+  "id": "fox_and_fish",
+  "original_size": [4096, 4096],
+  "compositions": ["1to1"],
+  "elements": [100, 50],
+  "previews": ["1to1/256x256/canvas"]
+}

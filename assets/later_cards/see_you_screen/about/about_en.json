@@ -1,0 +1,37 @@
+{
+  "sequence": {
+    "list": [
+      "its_all",
+      "announce",
+      "thanks",
+      "about_app",
+      "rate_app",
+      "bottom"
+    ],
+    "map": {
+      "its_all": {
+        "type": "text",
+        "text": "That's all ☺ for now"
+      },
+      "announce": {
+        "type": "text",
+        "text": "Animation coming soon!"
+      },
+      "thanks": {
+        "type": "text",
+        "text": "Thank You \uD83D\uDE4F for sharing Your support"
+      },
+      "about_app": {
+        "type": "text",
+        "text": "\nWe're gathering in one App the stories\nthat show the elusive… happiness"
+      },
+      "rate_app": {
+        "type": "rate"
+      },
+      "bottom": {
+        "type": "text",
+        "text": "Please rate the App ❤\nIt will help other families to enjoy\nPictures of Happiness and/or keep your child occupied and\nhopefully captivated… with beauty"
+      }
+    }
+  }
+}

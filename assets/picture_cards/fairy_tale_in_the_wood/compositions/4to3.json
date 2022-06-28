@@ -1,0 +1,133 @@
+{
+  "type": "picture",
+  "name": "fairy_tale_in_the_wood",
+  "aspect_size": "4to3",
+  "size": [
+    6144,
+    4608
+  ],
+  "ws": [
+    {
+      "name": "owl",
+      "position": "805 47",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bird",
+      "position": "2454 608",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fox",
+      "position": "3683 1366",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "rabbit",
+      "position": "2931 1753",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fish_1",
+      "position": "616 3689",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fish_2",
+      "position": "2544 3663",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_4",
+      "position": "5465 1284",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_3",
+      "position": "5056 362",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_2",
+      "position": "4206 313",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "girl",
+      "position": "313 981",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "light",
+      "position": "191 0",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "grass",
+      "position": "8 2225",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "tree",
+      "position": "0 0",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "ground",
+      "position": "0 2381",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "water",
+      "position": "0 3479",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "background",
+      "position": "0 0",
+      "sm": "GreyColorPlay"
+    }
+  ],
+  "state_machines": {
+    "GreyColorPlay": {
+      "transitions": [
+        "grey -> OnTap -> color",
+        "color -> OnEnd -> start_animation",
+        "start_animation -> OnEnd -> idle",
+        "idle -> OnTap -> sound",
+        "sound -> OnEnd -> idle"
+      ],
+      "directors": {
+        "grey": [
+          {
+            "ColorToGrey": {
+              "duration": 0
+            }
+          }
+        ],
+        "color": [
+          {
+            "GreyToColor": {
+              "duration": 1.2
+            }
+          }
+        ],
+        "start_animation": [
+          {
+            "SpriteToAnimation": {
+              "animation": "idle_offset"
+            }
+          }
+        ],
+        "idle": [],
+        "sound": [
+          {
+            "PlaySoundByTap": {
+              "volume": 1.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

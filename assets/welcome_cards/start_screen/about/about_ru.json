@@ -1,0 +1,15 @@
+{
+  "title1": "Счастье",
+  "title2": "Happiness",
+  "subtitle": "просто для удовольствия",
+  "privacy": {
+    "type": "link",
+    "text": "Политика конфиденциальности",
+    "link": "https://noisy.studio/privacy.html"
+  },
+  "terms": {
+    "type": "link",
+    "text": "Условия использования",
+    "link": "https://noisy.studio/terms.html"
+  }
+}

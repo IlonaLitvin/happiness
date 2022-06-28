@@ -1,0 +1,69 @@
+
+group_1.png
+size: 644, 1356
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+branch_1
+  rotate: false
+  xy: 522, 573
+  size: 87, 239
+  orig: 87, 239
+  offset: 0, 0
+  index: -1
+branch_2
+  rotate: false
+  xy: 524, 999
+  size: 78, 352
+  orig: 78, 357
+  offset: 0, 5
+  index: -1
+branch_3
+  rotate: false
+  xy: 580, 36
+  size: 59, 369
+  orig: 59, 369
+  offset: 0, 0
+  index: -1
+branch_4
+  rotate: false
+  xy: 418, 23
+  size: 160, 551
+  orig: 160, 551
+  offset: 0, 0
+  index: -1
+branch_5
+  rotate: false
+  xy: 452, 277
+  size: 148, 321
+  orig: 148, 321
+  offset: 0, 0
+  index: -1
+branch_6
+  rotate: false
+  xy: 273, 2
+  size: 193, 205
+  orig: 193, 205
+  offset: 0, 0
+  index: -1
+bush_1
+  rotate: false
+  xy: 2, 186
+  size: 564, 1165
+  orig: 564, 1165
+  offset: 0, 0
+  index: -1
+rock_1
+  rotate: false
+  xy: 91, 18
+  size: 180, 189
+  orig: 182, 191
+  offset: 1, 1
+  index: -1
+rock_2
+  rotate: false
+  xy: 183, 209
+  size: 233, 166
+  orig: 235, 168
+  offset: 1, 1
+  index: -1

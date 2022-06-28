@@ -1,0 +1,6 @@
+To detect from the App whether this named folder exists.
+The existence of this file guarantees that the folder with the given name is present
+in this folder hierarchy.
+
+\warning Be careful. If this folder is local and not included in the `pubspec.yaml`,
+including all folders inside it, the files will not be found.

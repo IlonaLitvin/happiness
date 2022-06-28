@@ -1,0 +1,18 @@
+{
+  "frames": {
+    "10": {    "frame": { "x": 0, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "11": {    "frame": { "x": 97, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "12": {    "frame": { "x": 194, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "13": {    "frame": { "x": 291, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "14": {    "frame": { "x": 388, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "15": {    "frame": { "x": 485, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "16": {    "frame": { "x": 582, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "17": {    "frame": { "x": 679, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "18": {    "frame": { "x": 776, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   },
+    "19": {    "frame": { "x": 873, "y": 92, "w": 97, "h": 92 },    "rotated": false,    "trimmed": false,    "spriteSourceSize": { "x": 0, "y": 0, "w": 97, "h": 92 },    "sourceSize": { "w": 97, "h": 92 },    "duration": 100   }
+ },
+
+  "meta": {
+    "app": "http://aseprite.org"
+  }
+}

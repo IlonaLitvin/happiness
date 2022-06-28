@@ -1,0 +1,118 @@
+
+branches_and_bushes.png
+size: 3988, 1472
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+branch_13
+  rotate: false
+  xy: 1596, 21
+  size: 61, 227
+  orig: 63, 229
+  offset: 1, 1
+  index: -1
+branch_14
+  rotate: false
+  xy: 127, 18
+  size: 51, 155
+  orig: 53, 157
+  offset: 1, 1
+  index: -1
+branch_15
+  rotate: false
+  xy: 61, 52
+  size: 64, 125
+  orig: 66, 127
+  offset: 1, 1
+  index: -1
+branch_16
+  rotate: false
+  xy: 429, 3
+  size: 41, 267
+  orig: 43, 269
+  offset: 1, 1
+  index: -1
+branch_17
+  rotate: false
+  xy: 180, 23
+  size: 46, 149
+  orig: 48, 151
+  offset: 1, 1
+  index: -1
+branch_18
+  rotate: false
+  xy: 2, 25
+  size: 57, 157
+  orig: 59, 159
+  offset: 1, 1
+  index: -1
+branch_19
+  rotate: false
+  xy: 345, 8
+  size: 74, 254
+  orig: 76, 256
+  offset: 1, 1
+  index: -1
+branch_20
+  rotate: false
+  xy: 284, 45
+  size: 59, 182
+  orig: 61, 184
+  offset: 1, 1
+  index: -1
+branch_21
+  rotate: false
+  xy: 2367, 106
+  size: 51, 380
+  orig: 53, 382
+  offset: 1, 1
+  index: -1
+branch_22
+  rotate: false
+  xy: 568, 44
+  size: 135, 300
+  orig: 137, 302
+  offset: 1, 1
+  index: -1
+branch_23
+  rotate: false
+  xy: 472, 12
+  size: 94, 262
+  orig: 97, 264
+  offset: 1, 1
+  index: -1
+branch_24
+  rotate: false
+  xy: 1659, 29
+  size: 61, 273
+  orig: 63, 275
+  offset: 1, 1
+  index: -1
+branch_25
+  rotate: false
+  xy: 2186, 19
+  size: 61, 318
+  orig: 63, 320
+  offset: 1, 1
+  index: -1
+branch_26
+  rotate: false
+  xy: 2280, 24
+  size: 85, 418
+  orig: 87, 420
+  offset: 1, 1
+  index: -1
+branch_27
+  rotate: false
+  xy: 705, 13
+  size: 66, 243
+  orig: 68, 245
+  offset: 1, 1
+  index: -1
+bushes
+  rotate: false
+  xy: 2, 2
+  size: 3983, 1468
+  orig: 3983, 1468
+  offset: 0, 0
+  index: -1

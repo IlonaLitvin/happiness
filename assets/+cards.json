@@ -1,0 +1,100 @@
+[
+  {
+    "type": "welcome",
+    "id": "start_screen",
+    "weight": 100
+  },
+  {
+    "type": "later",
+    "id": "see_you_screen",
+    "weight": 9999999
+  },
+  {
+    "type": "picture",
+    "id": "fairy_tale_in_the_wood",
+    "weight": 1010
+  },
+  {
+    "type": "picture",
+    "id": "fox_and_fish",
+    "weight": 1020
+  },
+  {
+    "type": "picture",
+    "id": "girl_and_deer",
+    "weight": 1030,
+    "how_to_get": {
+      "scopes": [
+        {
+          "scope": "-all_variants",
+          "costs": [
+            {
+              "cost": "subscribe_telegram"
+            },
+            {
+              "cost": "get_free"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "picture",
+    "id": "fairy",
+    "weight": 1040
+  },
+  {
+    "type": "picture",
+    "id": "girl_and_whale",
+    "weight": 1050,
+    "how_to_get": {
+      "scopes": [
+        {
+          "scope": "all_variants",
+          "costs": [
+            {
+              "cost": "rate_app"
+            },
+            {
+              "cost": "get_free"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "picture",
+    "id": "spring_girl",
+    "weight": 1060,
+    "how_to_get": {
+      "scopes": [
+        {
+          "scope": "all_variants",
+          "costs": [
+            {
+              "cost": "subscribe_store"
+            },
+            {
+              "cost": "get_free"
+            }
+          ]
+        },
+        {
+          "scope": "-midday",
+          "costs": [
+            {
+              "cost": "purchase",
+              "price": 0.47
+            },
+            {
+              "cost": "waiting",
+              "minutes": 1440
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

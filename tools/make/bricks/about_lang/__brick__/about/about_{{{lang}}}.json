@@ -1,0 +1,7 @@
+{
+  "name": "{{name}}",
+  "masterminds": {{{masterminds}}},
+  "artists": {{{artists}}},
+  "animators": {{{animators}}},
+  "thanks": {{{thanks}}}
+}

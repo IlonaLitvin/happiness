@@ -1,0 +1,66 @@
+{
+  "name": "test_with_group_and_fsm",
+  "background": {
+    "name": "background"
+  },
+  "aspect_size": "4to3",
+  "size": "4100 3075",
+  "ws": [
+    {
+      "name": "the left tree and squirrel",
+      "group": [
+        {
+          "name": "tree_left",
+          "position": "0.0 1370.0",
+          "anchor": "centerLeft"
+        },
+        {
+          "name": "squirrel",
+          "position": "340.0 930.0",
+          "sm": {
+            "transitions": [
+              "idle -> OnTap -> tap_reaction",
+              "tap_reaction -> OnEnd -> idle"
+            ],
+            "directors": {
+              "tap_reaction": [
+                {
+                  "ScaleInOut": {
+                    "duration": 0.5,
+                    "scale": 1.2,
+                    "curve": "bounceIn"
+                  }
+                },
+                {
+                  "PlaySoundByTap": {
+                    "volume": 1.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "the right tree and nest with birds",
+      "position": "0 0",
+      "group": [
+        {
+          "name": "tree_right",
+          "position": "4100.0 1440.0",
+          "anchor": "centerRight"
+        },
+        {
+          "name": "birds_nesty",
+          "position": "3839.0 950.0"
+        }
+      ]
+    },
+    {
+      "name": "bushes_right",
+      "position": "4100.0 3075.0",
+      "anchor": "bottomRight"
+    }
+  ]
+}

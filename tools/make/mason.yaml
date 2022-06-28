@@ -1,0 +1,7 @@
+bricks:
+  picture_card:
+    path: bricks\picture_card
+  about:
+    path: bricks\about
+  compositions:
+    path: bricks\compositions

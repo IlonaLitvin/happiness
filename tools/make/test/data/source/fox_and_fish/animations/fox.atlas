@@ -1,0 +1,97 @@
+
+fox.png
+size: 952, 3316
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+fox_body
+  rotate: false
+  xy: 2, 94
+  size: 619, 430
+  orig: 619, 430
+  offset: 0, 0
+  index: -1
+fox_ear_left
+  rotate: false
+  xy: 690, 2233
+  size: 237, 260
+  orig: 239, 263
+  offset: 1, 2
+  index: -1
+fox_ear_right_1
+  rotate: false
+  xy: 682, 2495
+  size: 179, 323
+  orig: 179, 323
+  offset: 0, 0
+  index: -1
+fox_ear_right_2
+  rotate: false
+  xy: 680, 2803
+  size: 241, 353
+  orig: 241, 353
+  offset: 0, 0
+  index: -1
+fox_eye_right_1
+  rotate: false
+  xy: 494, 2989
+  size: 142, 168
+  orig: 145, 171
+  offset: 1, 2
+  index: -1
+fox_eye_right_2
+  rotate: false
+  xy: 2, 3213
+  size: 101, 100
+  orig: 103, 102
+  offset: 1, 1
+  index: -1
+fox_eyebrow_right
+  rotate: false
+  xy: 2, 3174
+  size: 94, 37
+  orig: 96, 39
+  offset: 1, 1
+  index: -1
+fox_head
+  rotate: false
+  xy: 278, 526
+  size: 605, 610
+  orig: 605, 610
+  offset: 0, 0
+  index: -1
+fox_paw_back_right_1
+  rotate: false
+  xy: 605, 1138
+  size: 316, 265
+  orig: 316, 265
+  offset: 0, 0
+  index: -1
+fox_paw_back_right_2
+  rotate: false
+  xy: 622, 319
+  size: 264, 133
+  orig: 264, 133
+  offset: 0, 0
+  index: -1
+fox_paw_front_right
+  rotate: false
+  xy: 441, 2
+  size: 491, 344
+  orig: 491, 344
+  offset: 0, 0
+  index: -1
+fox_tail_1
+  rotate: false
+  xy: 2, 1030
+  size: 946, 1201
+  orig: 946, 1201
+  offset: 0, 0
+  index: -1
+fox_tail_2
+  rotate: false
+  xy: 2, 1895
+  size: 686, 1418
+  orig: 686, 1418
+  offset: 0, 0
+  index: -1

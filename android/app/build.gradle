@@ -1,0 +1,116 @@
+import java.security.InvalidParameterException
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new FileNotFoundException('Flutter SDK not found. Define location with flutter.sdk in the local.properties file.')
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    throw new InvalidParameterException('Version name should be defined in pubspec.yaml.')
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    throw new InvalidParameterException('Version code should be defined in pubspec.yaml.')
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('app/keystore.properties')
+println keystorePropertiesFile
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    compileSdkVersion 33
+
+    // \see Look at `[PATH_TO_ANDROID_SDK]/ndk` for NDK version.
+    //ndkVersion '23.1.7779620'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId 'studio.noisy.games.happiness'
+        resConfigs 'en', 'ru', 'uk'
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+    }
+
+    // \see Solution for problems: https://stackoverflow.com/questions/61787510/flutter-issue-keystore-file-not-set-for-signing-config-release
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                println "keyAlias: `${keystoreProperties['keyAlias']}`"
+                keyAlias keystoreProperties['keyAlias']
+
+                println "storeFile: `${keystoreProperties['storeFile']}`"
+                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+
+                keyPassword keystoreProperties['keyPassword']
+                storePassword keystoreProperties['storePassword']
+            } else {
+                System.err.println('File `keystore.properties` needed for build Release.')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            ndk {
+                // \warning There is a 300 MB limit for the native debug symbols file.
+                // If the debug symbols footprint is too large, use SYMBOL_TABLE instead of FULL.
+                debugSymbolLevel 'FULL'
+            }
+
+            // Shrink and minify are redundant for Flutter: the App size app does not change.
+            // shrinkResources true
+            // minifyEnabled true
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //testImplementation 'junit:junit:4.13.2'
+    //androidTestImplementation 'androidx.test:runner:1.4.0'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

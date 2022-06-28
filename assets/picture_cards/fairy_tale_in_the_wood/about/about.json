@@ -1,0 +1,20 @@
+{
+  "type": "picture",
+  "id": "fairy_tale_in_the_wood",
+  "original_size": [
+    6144,
+    4608
+  ],
+  "compositions": [
+    "4to3",
+    "-16to7",
+    "-16to9"
+  ],
+  "elements": [
+    100,
+    50
+  ],
+  "previews": [
+    "4to3/256x192/canvas"
+  ]
+}

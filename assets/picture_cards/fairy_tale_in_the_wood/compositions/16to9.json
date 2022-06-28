@@ -1,0 +1,124 @@
+{
+  "aspectSize": "16to9",
+  "name": "fairy_tale_in_the_wood",
+  "size": [
+    6144,
+    3456
+  ],
+  "ws": [
+    {
+      "name": "background_4to3",
+      "isPartBackground": true,
+      "position": "center",
+      "anchor": "center",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "ground",
+      "isPartBackground": true,
+      "position": "center 4608",
+      "anchor": "center bottom",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_1",
+      "position": "3911 1771",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_2",
+      "position": "4692 1315",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_3",
+      "position": "5412 1744",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "flower_4",
+      "position": "5781 1986",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "tree",
+      "position": "left top",
+      "anchor": "left top",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "girl",
+      "position": "1557 2200",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "grass",
+      "isPartBackground": true,
+      "position": "3072 3456",
+      "anchor": "center",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fox",
+      "isPartBackground": true,
+      "position": "4896 2400",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "rabbit",
+      "position": "3480 2520",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bird",
+      "position": "2952 992",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "owl",
+      "position": "1220 492",
+      "sm": "GreyColorPlay"
+    }
+  ],
+  "stateMachines": {
+    "GreyColorPlay": {
+      "transitions": [
+        "grey -> OnTap -> color",
+        "color -> OnEnd -> idle",
+        "idle -> OnTap -> tap",
+        "tap -> OnEnd -> idle"
+      ],
+      "directors": {
+        "grey": [
+          {
+            "ColorToGrey": {
+              "duration": 0
+            }
+          }
+        ],
+        "color": [
+          {
+            "GreyToColor": {
+              "duration": 1.2
+            }
+          }
+        ],
+        "idle": [],
+        "tap": [
+          {
+            "ScaleInOut": {
+              "duration": 0.5,
+              "scale": 1.05,
+              "curve": "easeInOutSine"
+            }
+          },
+          {
+            "PlaySoundByTap": {
+              "volume": 1.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

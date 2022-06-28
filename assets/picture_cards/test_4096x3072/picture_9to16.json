@@ -1,0 +1,52 @@
+{
+  "name": "test_4096x3072",
+  "size": "4096 x 3072",
+  "background": {
+    "name": "bg"
+  },
+  "ws": [
+    {
+      "name": "384x3072",
+      "position": [
+        4096.0,
+        1536.0
+      ],
+      "anchor": "centerRight"
+    },
+    {
+      "name": "4096x384",
+      "anchor": "topLeft"
+    },
+    {
+      "name": "4096x384",
+      "position": [
+        4096.0,
+        3072.0
+      ],
+      "anchor": "bottomRight"
+    },
+    {
+      "name": "4096x384",
+      "position": [
+        0.0,
+        2688.0
+      ],
+      "anchor": "topLeft"
+    },
+    {
+      "name": "512x512",
+      "position": [
+        2048.0,
+        1536.0
+      ]
+    },
+    {
+      "name": "384x384",
+      "position": [
+        2048.0,
+        1536.0
+      ],
+      "anchor": "centerRight"
+    }
+  ]
+}

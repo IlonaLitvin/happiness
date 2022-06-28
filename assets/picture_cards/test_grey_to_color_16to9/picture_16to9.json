@@ -1,0 +1,188 @@
+{
+  "name": "test_grey_to_color_16to9",
+  "background": {
+    "name": "background_16to9"
+  },
+  "size": [
+    4100,
+    2307
+  ],
+  "ws": [
+    {
+      "name": "the left tree and squirrel",
+      "group": [
+        {
+          "name": "tree_left",
+          "position": "left top",
+          "anchor": "left top",
+          "scale": 0.8
+        },
+        {
+          "name": "squirrel",
+          "position": "267 760",
+          "scale": 0.8,
+          "sm": {
+            "transitions": [
+              "idle -> OnTap -> tap_reaction",
+              "tap_reaction -> OnEnd -> idle"
+            ],
+            "directors": {
+              "tap_reaction": [
+                {
+                  "ScaleInOut": {
+                    "duration": 2.5,
+                    "scale": 2.2,
+                    "curve": "bounceIn"
+                  }
+                },
+                {
+                  "PlaySoundByTap": {
+                    "volume": 1.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "the right tree and nest with birds",
+      "group": [
+        {
+          "name": "tree_right",
+          "position": "right top",
+          "anchor": "right top"
+        },
+        {
+          "name": "nest",
+          "position": "3728 1076"
+        },
+        {
+          "name": "bird_3",
+          "position": "3624 1000"
+        },
+        {
+          "name": "bird_4",
+          "position": "3744 956"
+        }
+      ]
+    },
+    {
+      "name": "bird_1",
+      "position": "816 195"
+    },
+    {
+      "name": "bird_2",
+      "position": "3420 828"
+    },
+    {
+      "name": "bushes_5",
+      "position": "right bottom",
+      "anchor": "right bottom"
+    },
+    {
+      "name": "bushes_4",
+      "position": "right bottom",
+      "anchor": "right bottom"
+    },
+    {
+      "name": "bushes_3",
+      "position": "3090 bottom",
+      "anchor": "center bottom"
+    },
+    {
+      "name": "flowers_7",
+      "position": "868 2104"
+    },
+    {
+      "name": "bushes_2",
+      "position": "left bottom",
+      "anchor": "left bottom"
+    },
+    {
+      "name": "the girl and rabbits",
+      "group": [
+        {
+          "name": "girl",
+          "position": "center 2232",
+          "anchor": "center bottom",
+          "scale": 0.8,
+          "sm": {
+            "transitions": [
+              "grey -> OnTap -> color",
+              "color -> OnEnd -> idle",
+              "idle -> OnTap -> tap_reaction",
+              "tap_reaction -> OnEnd -> idle"
+            ],
+            "directors": {
+              "grey": [
+                {
+                  "ColorToGrey": {
+                    "duration": 0
+                  }
+                }
+              ],
+              "color": [
+                {
+                  "GreyToColor": {
+                    "duration": 1.2
+                  }
+                }
+              ],
+              "idle": [],
+              "tap_reaction": [
+                {
+                  "ScaleInOut": {
+                    "duration": 2.5,
+                    "scale": 1.2,
+                    "curve": "bounceIn"
+                  }
+                },
+                {
+                  "PlaySoundByTap": {
+                    "volume": 1.0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "rabbits",
+          "position": "2480 2140",
+          "anchor": "center bottom",
+          "scale": 0.8
+        }
+      ]
+    },
+    {
+      "name": "butterfly_1",
+      "position": "156 236"
+    },
+    {
+      "name": "butterfly_2",
+      "position": "244 324"
+    },
+    {
+      "name": "butterfly_3",
+      "position": "2804 1104",
+      "scale": 0.8
+    },
+    {
+      "name": "butterfly_4",
+      "position": "3072 1264",
+      "scale": 0.8
+    },
+    {
+      "name": "flowers_1",
+      "position": "left bottom",
+      "anchor": "left bottom"
+    },
+    {
+      "name": "flowers_5",
+      "position": "2720 bottom",
+      "anchor": "center bottom"
+    }
+  ]
+}

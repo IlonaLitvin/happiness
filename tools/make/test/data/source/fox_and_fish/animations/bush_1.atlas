@@ -1,0 +1,27 @@
+
+bush_1.png
+size: 876, 752
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+branch_28
+  rotate: false
+  xy: 646, 39
+  size: 67, 194
+  orig: 67, 194
+  offset: 0, 0
+  index: -1
+branch_29
+  rotate: false
+  xy: 537, 56
+  size: 124, 188
+  orig: 124, 188
+  offset: 0, 0
+  index: -1
+bush_4
+  rotate: false
+  xy: 2, 2
+  size: 871, 746
+  orig: 871, 746
+  offset: 0, 0
+  index: -1

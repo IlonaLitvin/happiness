@@ -1,0 +1,111 @@
+{
+  "type": "picture",
+  "name": "fox_and_fish",
+  "aspect_size": "1to1",
+  "size": [4096, 4096],
+  "ws_count": 12,
+  "ws": [
+    {
+      "name": "bird",
+      "position": "3087 691",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bush_1",
+      "position": "0 3352",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bush_2",
+      "position": "2576 3386",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bushes_1",
+      "position": "0 1469",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "bushes_2",
+      "position": "2882 1059",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fox",
+      "position": "495 1008",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "waves",
+      "position": "0 3153",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "fish",
+      "position": "2062 2893",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "s_river",
+      "position": "0 2743",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "s_ground",
+      "position": "0 2266",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "branches_and_bushes",
+      "position": "115 968",
+      "sm": "GreyColorPlay"
+    },
+    {
+      "name": "s_background",
+      "position": "0 0",
+      "sm": "GreyColorPlay"
+    }
+  ],
+  "state_machines": {
+    "GreyColorPlay": {
+      "transitions": [
+        "grey -> OnTap -> color",
+        "color -> OnEnd -> start_animation",
+        "start_animation -> OnEnd -> idle",
+        "idle -> OnTap -> sound",
+        "sound -> OnEnd -> idle"
+      ],
+      "directors": {
+        "grey": [
+          {
+            "ColorToGrey": {
+              "duration": 0
+            }
+          }
+        ],
+        "color": [
+          {
+            "GreyToColor": {
+              "duration": 1.2
+            }
+          }
+        ],
+        "start_animation": [
+          {
+            "SpriteToAnimation": {
+              "animation": "idle_offset"
+            }
+          }
+        ],
+        "idle": [],
+        "sound": [
+          {
+            "PlaySoundByTap": {
+              "volume": 1.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

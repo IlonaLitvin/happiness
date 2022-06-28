@@ -1,0 +1,56 @@
+{
+  "type": "{{type}}",
+  "name": "{{name}}",
+  "aspect_size": "{{w}}to{{h}}",
+  "size": [{{width}}, {{height}}],
+  "ws_count": {{ws_count}},
+  "ws": [{{#ws}}
+    {
+      "name": "{{name}}",
+      "position": "{{position}}",
+      "sm": "{{sm}}"
+    }{{^last}},{{/last}}{{/ws}}
+  ],
+  "state_machines": {
+    "GreyColorPlay": {
+      "transitions": [
+        "grey -> OnTap -> color",
+        "color -> OnEnd -> start_animation",
+        "start_animation -> OnEnd -> idle",
+        "idle -> OnTap -> sound",
+        "sound -> OnEnd -> idle"
+      ],
+      "directors": {
+        "grey": [
+          {
+            "ColorToGrey": {
+              "duration": 0
+            }
+          }
+        ],
+        "color": [
+          {
+            "GreyToColor": {
+              "duration": 1.2
+            }
+          }
+        ],
+        "start_animation": [
+          {
+            "SpriteToAnimation": {
+              "animation": "idle_offset"
+            }
+          }
+        ],
+        "idle": [],
+        "sound": [
+          {
+            "PlaySoundByTap": {
+              "volume": 1.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+bush_2.png
+size: 1528, 612
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+branch_30
+  rotate: false
+  xy: 2, 78
+  size: 95, 169
+  orig: 95, 169
+  offset: 0, 0
+  index: -1
+branch_31
+  rotate: false
+  xy: 119, 5
+  size: 44, 156
+  orig: 44, 156
+  offset: 0, 0
+  index: -1
+branch_32
+  rotate: false
+  xy: 22, 29
+  size: 95, 132
+  orig: 95, 132
+  offset: 0, 0
+  index: -1
+branch_33
+  rotate: false
+  xy: 2, 167
+  size: 85, 274
+  orig: 85, 274
+  offset: 0, 0
+  index: -1
+branch_34
+  rotate: false
+  xy: 2, 301
+  size: 44, 182
+  orig: 44, 182
+  offset: 0, 0
+  index: -1
+bush_5
+  rotate: false
+  xy: 2, 2
+  size: 1522, 606
+  orig: 1522, 606
+  offset: 0, 0
+  index: -1

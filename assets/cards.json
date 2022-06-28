@@ -1,0 +1,22 @@
+[
+  {
+    "type": "welcome",
+    "id": "-start_screen",
+    "weight": 100
+  },
+  {
+    "type": "later",
+    "id": "-see_you_screen",
+    "weight": 9999999
+  },
+  {
+    "type": "picture",
+    "id": "fox_and_fish",
+    "weight": 12345
+  },
+  {
+    "type": "picture",
+    "id": "-fairy_tale_in_the_wood",
+    "weight": 12345
+  }
+]

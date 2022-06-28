@@ -1,0 +1,15 @@
+{
+  "title1": "Happiness",
+  "title2": "",
+  "subtitle": "just for fun",
+  "privacy": {
+    "type": "link",
+    "text": "Privacy policy",
+    "link": "https://noisy.studio/privacy.html"
+  },
+  "terms": {
+    "type": "link",
+    "text": "Terms & Conditions",
+    "link": "https://noisy.studio/terms.html"
+  }
+}

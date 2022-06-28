@@ -1,0 +1,61 @@
+{
+  "name": "test_4096x3072_without_default_values",
+  "aspect_size": "4to3",
+  "size": [
+    4096,
+    3072
+  ],
+  "background": {
+    "name": "bg"
+  },
+  "ws": [
+    {
+      "name": "384x3072",
+      "visible": false,
+      "position": [
+        4096.0,
+        1536.0
+      ],
+      "anchor": "centerRight"
+    },
+    {
+      "visible": false,
+      "name": "4096x384 A",
+      "anchor": "topLeft"
+    },
+    {
+      "name": "4096x384 B",
+      "position": [
+        4096.0,
+        3072.0
+      ],
+      "anchor": "bottomRight"
+    },
+    {
+      "visible": false,
+      "name": "4096x384 C",
+      "position": [
+        0.0,
+        2688.0
+      ],
+      "anchor": "topLeft"
+    },
+    {
+      "name": "384x384",
+      "position": [
+        2048.0,
+        1536.0
+      ],
+      "anchor": "centerRight"
+    },
+    {
+      "name": "512x512",
+      "position": [
+        2048.0,
+        1536.0
+      ],
+      "scale": 2,
+      "mute": true
+    }
+  ]
+}

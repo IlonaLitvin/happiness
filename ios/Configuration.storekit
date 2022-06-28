@@ -1,0 +1,49 @@
+{
+  "identifier" : "D6A53AFF",
+  "nonRenewingSubscriptions" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "BE188212",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hp.199.1.m",
+      "referenceName" : "pro 1 month",
+      "type" : "NonRenewingSubscription"
+    },
+    {
+      "displayPrice" : "10.99",
+      "familyShareable" : false,
+      "internalID" : "FA1A560B",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hp.1099.1y",
+      "referenceName" : "pro 1 year",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_locale" : "uk",
+    "_storefront" : "UKR"
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

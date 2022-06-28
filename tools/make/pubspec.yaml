@@ -1,0 +1,27 @@
+name: make
+description: A command line tool for preparing pictures to App.
+version: 0.1.0+100
+publish_to: none
+
+environment:
+  sdk: '>=2.17.3 <3.0.0'
+
+
+dependencies:
+  archive: ^3.1.8
+
+  dart_helpers:
+    path: ../../../dart_helpers
+    #git: https://github.com/signmotion/dart_helpers
+
+  api_happiness:
+    path: ../../api_happiness
+
+  image: ^3.2.0
+  mason_cli: ^0.1.0-dev.30
+  path: ^1.8.2
+  xml: ^6.1.0
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.2
